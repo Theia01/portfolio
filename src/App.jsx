@@ -5,8 +5,6 @@ import { Routes, Route, BrowserRouter } from "react-router";
 import Home from "./Pages/Home.jsx";
 import Creations from "./Pages/Creations.jsx";
 
-import "./App.css";
-
 function App() {
   return (
     <>
