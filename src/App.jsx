@@ -4,6 +4,7 @@ import Footer from "./components/Footer.jsx";
 import { Routes, Route, BrowserRouter } from "react-router";
 import Home from "./Pages/Home.jsx";
 import Creations from "./Pages/Creations.jsx";
+import Error404 from "./Pages/Error404.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/creations" element={<Creations />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
       </BrowserRouter>
