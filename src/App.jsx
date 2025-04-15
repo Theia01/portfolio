@@ -22,10 +22,24 @@ function App() {
           </div>
         </div>
       </header>
-      <article>
-        <h1>Les services que je vous propose en travaillant ensemble 🤝</h1>
-        <Card title="UX/UI" text="improve" />
-      </article>
+      <div className="grid place-items-center pt-15">
+        <div className="max-w-2xl px-8">
+          <h1 className="text-xl font-bold mb-2">
+            Les services que je vous propose en travaillant ensemble 🤝
+          </h1>
+          <p>
+            Eius et voluptatem qui voluptatem. Perspiciatis numquam possimus eos
+            recusandae. Iste asperiores ut aperiam molestias omnis omnis.
+            Placeat ut sequi doloribus delectus. Consectetur dolor omnis minima
+            voluptas voluptatibus molestiae delectus voluptatibus.
+          </p>
+          <div className="flex pt-4 space-x-2">
+            <Card title="UX/UI" text="improve" />
+            <Card title="UX/UI" text="improve" />
+            <Card title="UX/UI" text="improve" />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
