@@ -7,7 +7,9 @@ function NavBar() {
       <div className="navbar bg-base-100 shadow-sm">
         <div className="flex-1">
           <NavLink to="/">
-            <div className="btn btn-ghost text-2xl logo-app pt-1">Axelle.G</div>
+            <div className="btn btn-ghost text-2xl font-molle pt-1">
+              Axelle.G
+            </div>
           </NavLink>
         </div>
         <div className="flex-none">
