@@ -1,5 +1,6 @@
 import Card from "./components/Card.jsx";
 import NavBar from "./components/NavBar.jsx";
+import Footer from "./components/Footer.jsx";
 import "./App.css";
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
