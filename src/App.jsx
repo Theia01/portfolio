@@ -34,9 +34,11 @@ function App() {
             voluptas voluptatibus molestiae delectus voluptatibus.
           </p>
           <div className="flex pt-4 space-x-2">
-            <Card title="UX/UI" text="improve" />
-            <Card title="UX/UI" text="improve" />
-            <Card title="UX/UI" text="improve" />
+            <Card title="UX/UI" text="Lorem ipsum " />
+            <Card title="Visuel Graphique" text="improve" />
+            <Card title="Site vitrine, e-commerce" text="improve" />
+            <Card title="Application Mobile" text="improve" />
+            <Card title="Optimisation SEO" text="improve" />
           </div>
         </div>
       </div>
