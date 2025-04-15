@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import NavBarLinks from "./NavBarLinks.jsx";
 
 function NavBar() {
@@ -5,7 +6,9 @@ function NavBar() {
     <nav>
       <div className="navbar bg-base-100 shadow-sm">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl logo-app pt-1">Axelle.G</a>
+          <NavLink to="/">
+            <div className="btn btn-ghost text-2xl logo-app pt-1">Axelle.G</div>
+          </NavLink>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 max-md:hidden">

@@ -1,14 +1,16 @@
+import { NavLink } from "react-router";
+
 function NavBarLinks() {
   return (
     <>
       <li className="p-1">
-        <a>Créations Web & Mobile</a>
+        <NavLink to="/creations">Créations Web & Mobile</NavLink>
       </li>
       <li className="p-1">
-        <a>Mon parcours</a>
+        <NavLink to="/parcours">Mon parcours</NavLink>
       </li>
       <li className="p-1">
-        <a>Contact</a>
+        <NavLink to="/">Contact</NavLink>
       </li>
     </>
   );
