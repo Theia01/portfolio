@@ -1,9 +1,10 @@
 import { NavLink } from "react-router";
 import NavBarLinks from "./NavBarLinks.jsx";
+import { IconMenuHamburger } from "../components/Icon.jsx";
 
 function NavBar() {
   return (
-    <nav>
+    <nav className="z-10">
       <div className="navbar bg-base-100 shadow-sm">
         <div className="flex-1">
           <NavLink to="/">
@@ -21,20 +22,7 @@ function NavBar() {
             <div className="drawer-content">
               {/* Page content here */}
               <label htmlFor="my-drawer-4" className="drawer-button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  className="inline-block h-5 w-5 stroke-current"
-                >
-                  {" "}
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>{" "}
-                </svg>
+                <IconMenuHamburger />
               </label>
             </div>
             <div className="drawer-side">
