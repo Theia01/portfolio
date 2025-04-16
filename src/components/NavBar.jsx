@@ -4,7 +4,7 @@ import { IconMenuHamburger } from "../components/Icon.jsx";
 
 function NavBar() {
   return (
-    <nav className="z-10">
+    <nav>
       <div className="navbar bg-base-100 shadow-sm">
         <div className="flex-1">
           <NavLink to="/">
@@ -25,7 +25,7 @@ function NavBar() {
                 <IconMenuHamburger />
               </label>
             </div>
-            <div className="drawer-side">
+            <div className="drawer-side z-10">
               <label
                 htmlFor="my-drawer-4"
                 aria-label="close sidebar"
