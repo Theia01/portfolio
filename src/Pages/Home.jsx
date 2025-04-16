@@ -1,23 +1,20 @@
 import Card from "../components/Card.jsx";
+import Hero from "../components/Hero.jsx";
 
 function Home() {
   return (
     <>
       <header>
-        <div className="hero bg-base-200 min-h-screen">
-          <div className="hero-content text-center">
-            <div className="max-w-xl">
-              <h1 className="text-5xl font-bold">
-                Enchanté ! Je suis <span className="text-primary">Axelle</span>,
-              </h1>
-              <p className="py-6">
-                Je maquette et dévellope des applications pour vous rendre la
-                vie plus <span className="font-bold">facile</span>.
-              </p>
-              <button className="btn btn-primary">Voir mes créations</button>
-            </div>
-          </div>
-        </div>
+        <Hero>
+          <h1 className="text-5xl font-bold">
+            Enchanté ! Je suis <span className="text-primary">Axelle</span>,
+          </h1>
+          <p className="py-6">
+            Je maquette et dévellope des applications pour vous rendre la vie
+            plus <span className="font-bold">facile</span>.
+          </p>
+          <button className="btn btn-primary">Voir mes créations</button>
+        </Hero>
       </header>
       <div className="grid place-items-center pt-15">
         <div className="max-w-2xl px-8">

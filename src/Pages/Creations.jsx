@@ -1,36 +1,33 @@
 import imgHisy from "../assets/img/project/hisy/screenshot_1.jpg";
+import Hero from "../components/Hero.jsx";
 
 function Creations() {
   return (
     <>
-      <div className="hero bg-base-200 py-30">
-        <div className="hero-content text-center">
-          <div className="max-w-2xl">
-            <h1 className="text-5xl font-bold">
-              Rien de mieux qu'un tour d'horizon pour vous donner des idées
-            </h1>
-            <p className="py-6">
-              Défilez vers le bas pour voir certains de mes travaux
-            </p>
-            <button className="btn btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-8"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
+      <Hero>
+        <h1 className="text-5xl font-bold">
+          Rien de mieux qu'un tour d'horizon pour vous donner des idées
+        </h1>
+        <p className="py-6">
+          Défilez vers le bas pour voir certains de mes travaux
+        </p>
+        <button className="btn btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+        </button>
+      </Hero>
       <div className="grid place-items-center py-15">
         <div className="max-w-2xl px-8">
           <div className="card lg:card-side bg-base-100 shadow-sm">
