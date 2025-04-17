@@ -61,6 +61,7 @@ export function IconMenuHamburger() {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
+      stroke="currentColor"
       className="inline-block h-5 w-5 stroke-current"
     >
       {" "}
@@ -70,6 +71,58 @@ export function IconMenuHamburger() {
         strokeWidth="2"
         d="M4 6h16M4 12h16M4 18h16"
       ></path>{" "}
+    </svg>
+  );
+}
+
+export function IconCheckMark() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      className="h-5 w-5"
+    >
+      <path
+        fillRule="evenodd"
+        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}
+
+export function IconLinkedin() {
+  return (
+    <svg
+      viewBox="0 0 192 192"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      stroke="currentColor"
+      className="size-9 -mt-1"
+    >
+      <rect
+        className="size-32"
+        x="30"
+        y="30"
+        stroke="currentColor"
+        stroke-width="8"
+        rx="16"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="8"
+        d="M66 86v44"
+      />
+      <circle cx="66" cy="64" r="6" fill="currentColor" />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth="8"
+        d="M126 130v-26c0-9.941-8.059-18-18-18v0c-9.941 0-18 8.059-18 18v26"
+      />
     </svg>
   );
 }
