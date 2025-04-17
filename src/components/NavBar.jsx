@@ -1,8 +1,30 @@
 import { NavLink } from "react-router";
-import NavBarLinks from "./NavBarLinks.jsx";
+import NavBarLink from "./NavBarLink.jsx";
 import { IconMenuHamburger } from "../components/Icon.jsx";
 
 function NavBar() {
+  const links = [
+    {
+      link: "/",
+      title: "Accueil",
+    },
+    {
+      link: "/creations",
+      title: "Créations Web & Mobile",
+    },
+    {
+      link: "/parcours",
+      title: "Mon parcours",
+    },
+    {
+      link: "/",
+      title: "Contact",
+    },
+  ];
+  const navBarLinks = links.map((item, i) => (
+    <NavBarLink key={i} link={item.link} title={item.title} />
+  ));
+
   return (
     <nav>
       <div className="navbar bg-base-100 shadow-sm">
@@ -15,7 +37,7 @@ function NavBar() {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 max-md:hidden">
-            <NavBarLinks />
+            {navBarLinks}
           </ul>
           <div className="drawer drawer-end min-md:hidden">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
@@ -32,7 +54,7 @@ function NavBar() {
                 className="drawer-overlay"
               ></label>
               <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-                <NavBarLinks />
+                {navBarLinks}
               </ul>
             </div>
           </div>
