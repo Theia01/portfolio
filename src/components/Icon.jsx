@@ -24,10 +24,10 @@ export function IconGithub() {
       fill="none"
       viewBox="0 0 192 192"
       stroke="currentColor"
-      className="size-6.5"
+      className="size-7"
     >
       <path
-        strokeWidth="12"
+        strokeWidth="11"
         strokeLinecap="round"
         strokeLinejoin="round"
         d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265"
@@ -123,6 +123,26 @@ export function IconLinkedin() {
         strokeWidth="8"
         d="M126 130v-26c0-9.941-8.059-18-18-18v0c-9.941 0-18 8.059-18 18v26"
       />
+    </svg>
+  );
+}
+
+export function IconMail() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      className="size-9 -mt-1"
+      fill="none"
+      strokeWidth="1"
+      stroke="currentColor"
+      strokeLinecap="round"
+    >
+      <path
+        d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+        strokeLinejoin="round"
+      />
+      <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" />
     </svg>
   );
 }

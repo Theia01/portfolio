@@ -1,10 +1,11 @@
 // Component
+import { NavLink } from "react-router";
 import Card from "../components/Card.jsx";
 import Container from "../components/Container.jsx";
 import Hero from "../components/Hero.jsx";
 
 // Icons
-import { IconGithub, IconLinkedin } from "../components/Icon.jsx";
+import { IconGithub, IconLinkedin, IconMail } from "../components/Icon.jsx";
 
 function Home() {
   return (
@@ -18,11 +19,14 @@ function Home() {
             Je maquette et dévellope des applications pour vous rendre la vie
             plus <span className="font-bold">facile</span>.
           </p>
-          <div className="flex justify-center pb-6">
+          <div className="flex justify-center pb-6 sm:space-x-4 space-x-5">
             <IconGithub />
             <IconLinkedin />
+            <IconMail />
           </div>
-          <button className="btn btn-primary">Voir mes créations</button>
+          <NavLink to="/creations" className="btn btn-primary">
+            Voir mes créations
+          </NavLink>
         </Hero>
       </header>
       <Container>
