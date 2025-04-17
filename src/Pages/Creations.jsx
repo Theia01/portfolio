@@ -1,5 +1,6 @@
 // Component
 import Hero from "../components/Hero.jsx";
+import Container from "../components/Container.jsx";
 
 // Icons
 import {
@@ -25,32 +26,32 @@ function Creations() {
           <IconArrayDown />
         </button>
       </Hero>
-      <div className="grid place-items-center py-15">
-        <div className="max-w-2xl px-8">
-          <div className="card lg:card-side bg-base-100 shadow-sm">
-            <div className="card-body">
-              <h2 className="card-title">Hisy</h2>
-              <p>
-                Une application mobile basé sur le challenge #HowISeeYou.
-                Représenter une personne avec neuf photo.
-              </p>
-              <div className="badge badge-primary">React Native</div>
-              <div className="badge badge-neutral">Android</div>
-              <div className="card-actions">
-                <button className="btn btn-ghost">
-                  <IconGithub />
-                </button>
-                <button className="btn btn-ghost">
-                  <IconOpenProject />
-                </button>
-              </div>
+      <Container size="max-w-2xl">
+        <div className="card card-side bg-base-100 shadow-sm sm:flex-row flex-col-reverse">
+          <div className="card-body">
+            <h2 className="card-title">Hisy</h2>
+            <p>
+              {" "}
+              Une application mobile basé sur le challenge #HowISeeYou.
+              Représenter une personne avec neuf photo.
+            </p>
+            <div className="badge badge-primary">React Native</div>
+            <div className="badge badge-neutral">Android</div>
+            <div className="card-actions justify-end">
+              <button className="btn btn-ghost">
+                <IconGithub />
+              </button>
+              <button className="btn btn-ghost">
+                <IconOpenProject />
+              </button>
+              <button className="btn btn-primary">En apprendre plus</button>
             </div>
-            <figure className="max-w-50">
-              <img src={imgHisy} alt="Hisy" />
-            </figure>
           </div>
+          <figure className="sm:max-w-50 sm:max-h-70 max-h-60 rounded-t-lg rounded-b-none sm:rounded-t-none sm:rounded-r-lg ">
+            <img src={imgHisy} alt="Project How I See You" />
+          </figure>
         </div>
-      </div>
+      </Container>
     </>
   );
 }
