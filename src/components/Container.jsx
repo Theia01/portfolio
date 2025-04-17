@@ -1,7 +1,7 @@
-function Container({ children }) {
+function Container({ children, size = "max-w-4xl" }) {
   return (
     <div className="grid place-items-center py-15">
-      <div className="max-w-4xl px-8">{children}</div>
+      <div className={`${size} px-8`}>{children}</div>
     </div>
   );
 }

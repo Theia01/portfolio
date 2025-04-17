@@ -7,10 +7,9 @@ function TimelineItem({ id, date, title, text, end = false }) {
         <IconCheckMark />
       </div>
       <div
-        className={
-          (id % 2 ? "timeline-end" : "timeline-start md:text-end ") +
-          " md:mb-10"
-        }
+        className={`${
+          id % 2 ? "timeline-end" : "timeline-start md:text-end "
+        } md:mb-10`}
       >
         <time className="font-mono italic">{date}</time>
         <div className="text-lg font-black">{title}</div>
