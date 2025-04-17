@@ -106,7 +106,7 @@ export function IconLinkedin() {
         x="30"
         y="30"
         stroke="currentColor"
-        stroke-width="8"
+        strokeWidth="8"
         rx="16"
       />
       <path
