@@ -24,7 +24,10 @@ function Home() {
             <IconLinkedin />
             <IconMail />
           </div>
-          <NavLink to="/creations" className="btn btn-primary">
+          <NavLink
+            to="/creations"
+            className="btn btn-primary sm:transition sm:delay-150 sm:duration-300 sm:ease-in-out sm:hover:scale-110"
+          >
             Voir mes créations
           </NavLink>
         </Hero>

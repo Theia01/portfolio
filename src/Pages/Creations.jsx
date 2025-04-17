@@ -22,7 +22,7 @@ function Creations() {
         <p className="py-6">
           Défilez vers le bas pour voir certains de mes travaux
         </p>
-        <button className="btn btn-ghost">
+        <button className="btn btn-ghost animate-bounce">
           <IconArrayDown />
         </button>
       </Hero>
