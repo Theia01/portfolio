@@ -16,7 +16,7 @@ function Home() {
           <button className="btn btn-primary">Voir mes créations</button>
         </Hero>
       </header>
-      <div className="grid place-items-center pt-15">
+      <div className="grid place-items-center py-15">
         <div className="max-w-2xl px-8">
           <h1 className="text-xl font-bold mb-2">
             Les services que je vous propose en travaillant ensemble 🤝
@@ -27,12 +27,23 @@ function Home() {
             Placeat ut sequi doloribus delectus. Consectetur dolor omnis minima
             voluptas voluptatibus molestiae delectus voluptatibus.
           </p>
-          <div className="flex pt-4 space-x-2">
-            <Card title="UX/UI" text="Lorem ipsum " />
-            <Card title="Visuel Graphique" text="improve" />
-            <Card title="Site vitrine, e-commerce" text="improve" />
-            <Card title="Application Mobile" text="improve" />
-            <Card title="Optimisation SEO" text="improve" />
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 pt-5">
+            <Card
+              title="Visuel Graphique"
+              text="Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem officia."
+            />
+            <Card
+              title="Site vitrine, e-commerce"
+              text="Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem."
+            />
+            <Card
+              title="Application Mobile"
+              text="Aliquid saepe repudiandae qui placeat atque atione voluptatem qui repellat quis. "
+            />
+            <Card
+              title="Optimisation SEO"
+              text="Olorem blanditiis omnis. Qui deleniti dignissimos doloremque incidunt dicta suscipit aspernatur tenetur."
+            />
           </div>
         </div>
       </div>
