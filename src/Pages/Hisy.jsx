@@ -1,5 +1,11 @@
 import Container from "../components/Container";
 import { IconInfo, IconArrowRight } from "../components/Icon";
+
+// Img project
+import imgIntroSlide1 from "../assets/img/project/hisy/hisy_step_1.png";
+import imgIntroSlide2 from "../assets/img/project/hisy/hisy_step_2.png";
+import imgIntroSlide3 from "../assets/img/project/hisy/hisy_step_3.png";
+
 function Hisy() {
   return (
     <Container>
@@ -39,17 +45,56 @@ function Hisy() {
           </div>
         </div>
       </div>
-      <p></p>
-      <h2 className="text-xl font-bold mb-2">Description</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus mi
-        ut pretium dapibus. Aenean sit amet iaculis dui, in tincidunt diam.
-        Etiam in nibh at tortor consequat efficitur vel quis diam. Quisque
-        rhoncus odio aliquet euismod porttitor. Nunc molestie interdum sodales.
-        Mauris finibus nisl ac mi ultricies, ut ultrices elit varius. Vestibulum
-        congue nec odio a molestie. Nam imperdiet in arcu et semper. In ac
-        accumsan tortor.
-      </p>
+      <div className="pb-10">
+        <h2 className="text-xl font-bold mb-2">Description</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus
+          mi ut pretium dapibus. Aenean sit amet iaculis dui, in tincidunt diam.
+          Etiam in nibh at tortor consequat efficitur vel quis diam. Quisque
+          rhoncus odio aliquet euismod porttitor. Nunc molestie interdum
+          sodales. Mauris finibus nisl ac mi ultricies, ut ultrices elit varius.
+          Vestibulum congue nec odio a molestie. Nam imperdiet in arcu et
+          semper. In ac accumsan tortor.
+        </p>
+      </div>
+      <div className="pb-10">
+        <h2 className="text-xl font-bold mb-2">Introduction slider</h2>
+        <div className="flex space-x-4 max-md:flex-col">
+          <p className="md:w-64 grow pb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            luctus mi ut pretium dapibus. Aenean sit amet iaculis dui, in
+            tincidunt diam. Etiam in nibh at tortor consequat efficitur vel quis
+            diam. Quisque rhoncus odio aliquet euismod porttitor. Nunc molestie
+            interdum sodales. Mauris finibus nisl ac mi ultricies, ut ultrices
+            elit varius. Vestibulum congue nec odio a molestie. Nam imperdiet in
+            arcu et semper. In ac accumsan tortor.
+          </p>
+
+          <div className="carousel rounded-box md:w-64">
+            <div className="carousel-item md:w-full">
+              <img
+                src={imgIntroSlide1}
+                className="md:w-full max-md:max-h-120"
+                alt="Tailwind CSS Carousel component"
+              />
+            </div>
+            <div className="carousel-item md:w-full">
+              <img
+                src={imgIntroSlide2}
+                className="md:w-full max-md:max-h-120"
+                alt="Tailwind CSS Carousel component"
+              />
+            </div>
+            <div className="carousel-item md:w-full">
+              <img
+                src={imgIntroSlide3}
+                className="md:w-full max-md:max-h-120"
+                alt="Tailwind CSS Carousel component"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </Container>
   );
 }
