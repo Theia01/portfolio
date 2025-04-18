@@ -21,9 +21,17 @@ function NavBar() {
       title: "Contact",
     },
   ];
-  const navBarLinks = links.map((item, i) => (
-    <NavBarLink key={i} link={item.link} title={item.title} />
-  ));
+
+  function createNavBarLinks(isMenuHamburger = false) {
+    return links.map((item, i) => (
+      <NavBarLink
+        key={i}
+        link={item.link}
+        title={item.title}
+        isMenuHamburger={isMenuHamburger}
+      />
+    ));
+  }
 
   return (
     <nav>
@@ -37,12 +45,11 @@ function NavBar() {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 max-md:hidden">
-            {navBarLinks}
+            {createNavBarLinks()}
           </ul>
           <div className="drawer drawer-end min-md:hidden">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
-              {/* Page content here */}
               <label htmlFor="my-drawer-4" className="drawer-button">
                 <IconMenuHamburger />
               </label>
@@ -54,7 +61,7 @@ function NavBar() {
                 className="drawer-overlay"
               ></label>
               <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-                {navBarLinks}
+                {createNavBarLinks(true)}
               </ul>
             </div>
           </div>

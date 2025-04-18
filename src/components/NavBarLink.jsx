@@ -1,13 +1,16 @@
 import { NavLink } from "react-router";
 
-function NavBarLink({ link, title }) {
+function NavBarLink({ link, title, isMenuHamburger = false }) {
   return (
     <>
       <li
         className="p-1"
-        onClick={() => {
-          document.getElementById("my-drawer-4")?.click();
-        }}
+        onClick={
+          isMenuHamburger &&
+          (() => {
+            document.getElementById("my-drawer-4")?.click();
+          })
+        }
       >
         <NavLink to={link}>{title}</NavLink>
       </li>
