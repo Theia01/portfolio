@@ -50,7 +50,7 @@ function NavBar() {
           </ul>
           <div className="drawer drawer-end min-md:hidden">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content">
+            <div className="drawer-content mr-3">
               <label htmlFor="my-drawer-4" className="drawer-button">
                 <IconMenuHamburger />
               </label>
