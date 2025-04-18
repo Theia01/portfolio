@@ -33,9 +33,9 @@ function Home() {
         </Hero>
       </header>
       <Container>
-        <h1 className="text-xl font-bold mb-2">
+        <h2 className="text-xl font-bold mb-2">
           Les services que je vous propose en travaillant ensemble 🤝
-        </h1>
+        </h2>
         <p>
           Eius et voluptatem qui voluptatem. Perspiciatis numquam possimus eos
           recusandae. Iste asperiores ut aperiam molestias omnis omnis. Placeat

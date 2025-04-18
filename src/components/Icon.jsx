@@ -164,3 +164,22 @@ export function IconInfo() {
     </svg>
   );
 }
+
+export function IconArrowRight() {
+  return (
+    <svg viewBox="0 0 411 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M4.52541 56.2649C33.03 146.736 126.715 269.558 236.81 230.985C317.858 202.589 332.914 51.3857 255.034 9.98149C225.845 -5.53717 209.626 12.0408 213.958 42.0906C220.285 85.9818 250.459 128.725 287.433 152.303C319.506 172.755 358.533 170.816 395.042 170.816"
+        stroke="currentColor"
+        strokeWidth="8"
+        strokeLinecap="round"
+      />
+      <path
+        d="M386.469 189.774C391.228 183.112 403.989 182.398 405.735 174.636C408.212 163.628 406.286 150.244 406.286 138.993"
+        stroke="currentColor"
+        strokeWidth="8"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
