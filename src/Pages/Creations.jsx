@@ -11,6 +11,7 @@ import {
 
 // Images
 import imgHisy from "../assets/img/project/hisy/screenshot_1.jpg";
+import { NavLink } from "react-router";
 
 function Creations() {
   return (
@@ -44,7 +45,9 @@ function Creations() {
               <button className="btn btn-ghost">
                 <IconOpenProject />
               </button>
-              <button className="btn btn-primary">En apprendre plus</button>
+              <NavLink to="/creations/hisy" className="btn btn-primary">
+                En apprendre plus
+              </NavLink>
             </div>
           </div>
           <figure className="sm:max-w-50 sm:max-h-70 max-h-60 rounded-t-lg rounded-b-none sm:rounded-t-none sm:rounded-r-lg ">

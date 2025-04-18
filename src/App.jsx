@@ -4,6 +4,7 @@ import Footer from "./components/Footer.jsx";
 import { Routes, Route, BrowserRouter } from "react-router";
 import Home from "./Pages/Home.jsx";
 import Creations from "./Pages/Creations.jsx";
+import Hisy from "./Pages/Hisy.jsx";
 import Parcours from "./Pages/Parcours.jsx";
 import Error404 from "./Pages/Error404.jsx";
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/creations" element={<Creations />} />
+          <Route path="/creations/hisy" element={<Hisy />} />
           <Route path="/parcours" element={<Parcours />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
