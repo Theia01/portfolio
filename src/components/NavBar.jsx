@@ -22,6 +22,7 @@ function NavBar() {
     },
   ];
 
+  // Création de la navBarLinks en fonction si c'est pour le menu web ou mobile
   function createNavBarLinks(isMenuHamburger = false) {
     return links.map((item, i) => (
       <NavBarLink
