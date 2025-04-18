@@ -11,10 +11,11 @@ function NavBarLink({ link, title, isMenuHamburger = false }) {
           // mais ici nous ne rechargons que l'intérieur des pages, donc on force la disparition
           // du drawer-slide du menu ouvrant en cliquant sur la checkbox
           // Il ne doit être fais seulement en mobile car sinon en mode web, l'overlay apparait
-          isMenuHamburger &&
-          (() => {
-            document.getElementById("my-drawer-4")?.click();
-          })
+          isMenuHamburger
+            ? () => {
+                document.getElementById("my-drawer-4")?.click();
+              }
+            : null
         }
       >
         <NavLink to={link}>{title}</NavLink>
