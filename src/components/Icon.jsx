@@ -171,13 +171,13 @@ export function IconArrowRight() {
       <path
         d="M4.52541 56.2649C33.03 146.736 126.715 269.558 236.81 230.985C317.858 202.589 332.914 51.3857 255.034 9.98149C225.845 -5.53717 209.626 12.0408 213.958 42.0906C220.285 85.9818 250.459 128.725 287.433 152.303C319.506 172.755 358.533 170.816 395.042 170.816"
         stroke="currentColor"
-        strokeWidth="8"
+        strokeWidth="6"
         strokeLinecap="round"
       />
       <path
         d="M386.469 189.774C391.228 183.112 403.989 182.398 405.735 174.636C408.212 163.628 406.286 150.244 406.286 138.993"
         stroke="currentColor"
-        strokeWidth="8"
+        strokeWidth="6"
         strokeLinecap="round"
       />
     </svg>
@@ -190,13 +190,13 @@ export function IconArrowLeft() {
       <path
         d="M339.994 4C339.994 53.9386 342.541 140.954 245.315 170.666C146.058 200.999 77.4166 49.691 157.971 29.8263C206.924 17.7547 235.369 84.4462 239.981 94.5642C259.347 137.044 260.106 179.322 220.646 218.875C183.527 256.08 119.172 292.221 33.9561 292.221"
         stroke="currentColor"
-        strokeWidth="8"
+        strokeWidth="5"
         strokeLinecap="round"
       />
       <path
         d="M24.9255 275.418C23.8201 278.558 3.31206 306.174 4.0178 306.192C21.3416 306.64 38.9431 306.192 56.287 306.192"
         stroke="currentColor"
-        strokeWidth="8"
+        strokeWidth="5"
         strokeLinecap="round"
       />
     </svg>
