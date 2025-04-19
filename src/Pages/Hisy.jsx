@@ -11,7 +11,6 @@ import imgImgInitial from "@img/hisy/hisy_initial.png";
 import imgImgLang from "@img/hisy/hisy_lang.png";
 import imgImgCrop from "@img/hisy/hisy_crop.png";
 import imgImgNotif2 from "@img/hisy/hisy_notif_2.png";
-import imgImgNotif4 from "@img/hisy/hisy_notif_4.png";
 import imgImgComplete from "@img/hisy/hisy_completed.png";
 
 function Hisy() {
@@ -21,7 +20,6 @@ function Hisy() {
     imgImgLang,
     imgImgCrop,
     imgImgNotif2,
-    imgImgNotif4,
     imgImgComplete,
   ];
 
