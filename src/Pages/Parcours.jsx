@@ -1,6 +1,6 @@
 // Components
-import Container from "../components/Container.jsx";
-import TimelineItem from "../components/TimelineItem.jsx";
+import Container from "@components/Container.jsx";
+import TimelineItem from "@components/TimelineItem.jsx";
 
 function Parcours() {
   const items = [

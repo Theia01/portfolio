@@ -1,17 +1,18 @@
-import Container from "../components/Container";
-import Carousel from "../components/Carousel";
-import { IconInfo, IconArrowRight, IconArrowLeft } from "../components/Icon";
+// Components
+import Container from "@components/Container";
+import Carousel from "@components/Carousel";
+import { IconInfo, IconArrowRight, IconArrowLeft } from "@components/Icons.jsx";
 
 // Img project
-import imgIntroSlide1 from "../assets/img/project/hisy/hisy_step_1.png";
-import imgIntroSlide2 from "../assets/img/project/hisy/hisy_step_2.png";
-import imgIntroSlide3 from "../assets/img/project/hisy/hisy_step_3.png";
-import imgImgInitial from "../assets/img/project/hisy/hisy_initial.png";
-import imgImgLang from "../assets/img/project/hisy/hisy_lang.png";
-import imgImgCrop from "../assets/img/project/hisy/hisy_crop.png";
-import imgImgNotif2 from "../assets/img/project/hisy/hisy_notif_2.png";
-import imgImgNotif4 from "../assets/img/project/hisy/hisy_notif_4.png";
-import imgImgComplete from "../assets/img/project/hisy/hisy_completed.png";
+import imgIntroSlide1 from "@img/hisy/hisy_step_1.png";
+import imgIntroSlide2 from "@img/hisy/hisy_step_2.png";
+import imgIntroSlide3 from "@img/hisy/hisy_step_3.png";
+import imgImgInitial from "@img/hisy/hisy_initial.png";
+import imgImgLang from "@img/hisy/hisy_lang.png";
+import imgImgCrop from "@img/hisy/hisy_crop.png";
+import imgImgNotif2 from "@img/hisy/hisy_notif_2.png";
+import imgImgNotif4 from "@img/hisy/hisy_notif_4.png";
+import imgImgComplete from "@img/hisy/hisy_completed.png";
 
 function Hisy() {
   const imgs_intro_caroussel = [imgIntroSlide1, imgIntroSlide2, imgIntroSlide3];

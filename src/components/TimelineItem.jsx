@@ -1,4 +1,4 @@
-import { IconCheckMark } from "./Icon.jsx";
+import { IconCheckMark } from "@components/Icons.jsx";
 
 function TimelineItem({ id, date, title, text, end = false }) {
   return (

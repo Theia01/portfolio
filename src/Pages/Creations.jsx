@@ -1,17 +1,18 @@
+import { NavLink } from "react-router";
+
 // Component
-import Hero from "../components/Hero.jsx";
-import Container from "../components/Container.jsx";
+import Hero from "@components/Hero.jsx";
+import Container from "@components/Container.jsx"
 
 // Icons
 import {
   IconArrayDown,
   IconGithub,
   IconOpenProject,
-} from "../components/Icon.jsx";
+} from "@components/Icons.jsx";
 
 // Images
-import imgHisy from "../assets/img/project/hisy/screenshot_1.jpg";
-import { NavLink } from "react-router";
+import imgHisy from "@img/hisy/screenshot_1.jpg";
 
 function Creations() {
   return (

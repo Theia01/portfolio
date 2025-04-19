@@ -1,11 +1,11 @@
 // Component
 import { NavLink } from "react-router";
-import Card from "../components/Card.jsx";
-import Container from "../components/Container.jsx";
-import Hero from "../components/Hero.jsx";
+import Card from "@components/Card.jsx";
+import Container from "@components/Container.jsx";
+import Hero from "@components/Hero.jsx";
 
 // Icons
-import { IconGithub, IconLinkedin, IconMail } from "../components/Icon.jsx";
+import { IconGithub, IconLinkedin, IconMail } from "@components/Icons.jsx";
 
 function Home() {
   return (

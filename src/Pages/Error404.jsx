@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import Hero from "../components/Hero";
+import Hero from "@components/Hero";
 
 function Error404() {
   return (

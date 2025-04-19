@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
 import NavBarLink from "./NavBarLink.jsx";
-import { IconMenuHamburger } from "../components/Icon.jsx";
+import { IconMenuHamburger } from "@components/Icons.jsx";
 
 function NavBar() {
   const links = [
