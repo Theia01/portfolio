@@ -1,4 +1,4 @@
-function Card({ title, text }) {
+function CardHome({ title, text }) {
   return (
     <div className="card bg-base-100 card-md shadow-sm">
       <div className="card-body">
@@ -9,4 +9,4 @@ function Card({ title, text }) {
   );
 }
 
-export default Card;
+export default CardHome;

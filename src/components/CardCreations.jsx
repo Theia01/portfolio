@@ -1,0 +1,47 @@
+import { NavLink, Link } from "react-router";
+
+// Icons
+import {
+  IconGithub,
+  IconOpenProject,
+} from "@components/Icons.jsx";
+
+function CardCreations({ title, link, description, img, imgAlt = '', languages = [], others = [], github = '', site = '' }) {
+
+  return (
+    <div id="hisy" className="card card-side bg-base-100 shadow-sm sm:flex-row flex-col-reverse">
+      <div className="card-body">
+        <h2 className="card-title capitalize">{title}</h2>
+        <p>
+          {description}
+        </p>
+        <div>
+          {!!languages?.length && languages.map(language => <div className="badge badge-primary mr-1">{language}</div>)}
+        </div>
+        <div>
+          {!!others?.length && others.map(other => <div className="badge badge-neutral mr-1">{other}</div>)}
+        </div>
+        <div className="card-actions justify-end">
+          {
+            github && <Link target="_blank" to={github} className="btn btn-ghost">
+              <IconGithub />
+            </Link>
+          }
+          {
+            site && <Link target="_blank" to={site} className="btn btn-ghost">
+              <IconOpenProject />
+            </Link>
+          }
+          <NavLink to={`/creations${link}`} className="btn btn-primary">
+            En apprendre plus
+          </NavLink>
+        </div>
+      </div>
+      <figure className="sm:max-w-50 sm:max-h-70 max-h-60 rounded-t-lg rounded-b-none sm:rounded-t-none sm:rounded-r-lg ">
+        <img src={img} alt={imgAlt} />
+      </figure>
+    </div>
+  );
+}
+
+export default CardCreations;

@@ -1,6 +1,6 @@
 // Component
 import { NavLink, Link } from "react-router";
-import Card from "@components/Card.jsx";
+import CardHome from "@components/CardHome.jsx";
 import Container from "@components/Container.jsx";
 import Hero from "@components/Hero.jsx";
 
@@ -49,19 +49,19 @@ function Home() {
           voluptatibus molestiae delectus voluptatibus.
         </p>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 pt-5">
-          <Card
+          <CardHome
             title="Visuel Graphique"
             text="Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem officia."
           />
-          <Card
+          <CardHome
             title="Site vitrine, e-commerce"
             text="Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem."
           />
-          <Card
+          <CardHome
             title="Application Mobile"
             text="Aliquid saepe repudiandae qui placeat atque atione voluptatem qui repellat quis. "
           />
-          <Card
+          <CardHome
             title="Optimisation SEO"
             text="Olorem blanditiis omnis. Qui deleniti dignissimos doloremque incidunt dicta suscipit aspernatur tenetur."
           />
