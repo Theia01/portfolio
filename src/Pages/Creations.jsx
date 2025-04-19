@@ -24,12 +24,12 @@ function Creations() {
         <p className="py-6">
           Défilez vers le bas pour voir certains de mes travaux
         </p>
-        <button className="btn btn-ghost animate-bounce">
+        <a href='#hisy' className="btn btn-ghost animate-bounce">
           <IconArrayDown />
-        </button>
+        </a>
       </Hero>
       <Container size="max-w-2xl">
-        <div className="card card-side bg-base-100 shadow-sm sm:flex-row flex-col-reverse">
+        <div id="hisy" className="card card-side bg-base-100 shadow-sm sm:flex-row flex-col-reverse">
           <div className="card-body">
             <h2 className="card-title">Hisy</h2>
             <p>
