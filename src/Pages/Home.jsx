@@ -8,12 +8,31 @@ import Hero from "@components/Hero.jsx";
 import { IconGithub, IconLinkedin, IconMail } from "@components/Icons.jsx";
 
 function Home() {
+  const services = [{
+    title: "Visuel Graphique",
+    text: "Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem officia.",
+  },
+  {
+    title: "Site vitrine, e-commerce",
+    text: "Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem.",
+  },
+  {
+    title: "Application Mobile",
+    text: "Aliquid saepe repudiandae qui placeat atque atione voluptatem qui repellat quis.",
+  },
+  {
+    title: "Optimisation SEO",
+    text: "Olorem blanditiis omnis. Qui deleniti dignissimos doloremque incidunt dicta suscipit aspernatur tenetur.",
+  },
+
+]
+
   return (
     <>
       <header>
         <Hero>
           <h1 className="text-5xl font-bold">
-            Enchanté ! Je suis <span className="text-primary">Axelle</span>,
+            Enchantée ! Je suis <span className="text-primary">Axelle</span>,
           </h1>
           <p className="py-6">
             Je maquette et dévellope des applications pour vous rendre la vie
@@ -49,22 +68,7 @@ function Home() {
           voluptatibus molestiae delectus voluptatibus.
         </p>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 pt-5">
-          <CardHome
-            title="Visuel Graphique"
-            text="Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem officia."
-          />
-          <CardHome
-            title="Site vitrine, e-commerce"
-            text="Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem."
-          />
-          <CardHome
-            title="Application Mobile"
-            text="Aliquid saepe repudiandae qui placeat atque atione voluptatem qui repellat quis. "
-          />
-          <CardHome
-            title="Optimisation SEO"
-            text="Olorem blanditiis omnis. Qui deleniti dignissimos doloremque incidunt dicta suscipit aspernatur tenetur."
-          />
+          { services.map((service, i) => <CardHome key={i} {...service} />)  }
         </div>
       </Container>
     </>

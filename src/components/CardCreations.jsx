@@ -16,10 +16,10 @@ function CardCreations({ title, link, description, img, imgAlt = '', languages =
           {description}
         </p>
         <div>
-          {!!languages?.length && languages.map(language => <div className="badge badge-primary mr-1">{language}</div>)}
+          {!!languages?.length && languages.map((language, i) => <div key={i} className="badge badge-primary mr-1">{language}</div>)}
         </div>
         <div>
-          {!!others?.length && others.map(other => <div className="badge badge-neutral mr-1">{other}</div>)}
+          {!!others?.length && others.map((other, i) => <div key={i} className="badge badge-neutral mr-1">{other}</div>)}
         </div>
         <div className="card-actions justify-end">
           {

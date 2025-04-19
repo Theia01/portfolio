@@ -40,7 +40,7 @@ function Creations() {
       </Hero>
       <Container size="max-w-2xl">
         {
-          projects.map((project) => <CardCreations {...project} />)
+          projects.map((project, i) => <CardCreations key={i} {...project} />)
         }
       </Container>
     </>
