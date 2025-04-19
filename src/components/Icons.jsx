@@ -99,7 +99,7 @@ export function IconLinkedin() {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       stroke="currentColor"
-      className="size-9 -mt-1"
+      className="size-9"
     >
       <rect
         className="size-32"
@@ -132,7 +132,7 @@ export function IconMail() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      className="size-9 -mt-1"
+      className="size-9"
       fill="none"
       strokeWidth="1"
       stroke="currentColor"

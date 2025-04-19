@@ -1,5 +1,5 @@
 // Component
-import { NavLink } from "react-router";
+import { NavLink, Link } from "react-router";
 import Card from "@components/Card.jsx";
 import Container from "@components/Container.jsx";
 import Hero from "@components/Hero.jsx";
@@ -19,10 +19,16 @@ function Home() {
             Je maquette et dévellope des applications pour vous rendre la vie
             plus <span className="font-bold">facile</span>.
           </p>
-          <div className="flex justify-center pb-6 sm:space-x-4 space-x-5">
-            <IconGithub />
+          <div className="flex justify-center pb-6 space-x-1">
+            <Link className="btn btn-ghost" to="https://github.com/theia01">
+              <IconGithub />
+            </Link>
+            <Link className="btn btn-ghost" to="https://www.linkedin.com/in/axelle-guinaudeau-2b4036172/">
             <IconLinkedin />
+            </Link>
+            <a className="btn btn-ghost" href='mailto:axelle.guinaudeau.pro@gmail.com'>
             <IconMail />
+            </a>
           </div>
           <NavLink
             to="/creations"
