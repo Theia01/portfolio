@@ -11,19 +11,28 @@ import {
 
 // Images
 import imgHisy from "@img/hisy/screenshot_1.jpg";
+import imgPapoteCar from "@img/papoteCar/home.jpg";
 
 function Creations() {
   const projects = [{
     title: "hisy",
     link: "/hisy",
     img: imgHisy,
-    imgAlt: 'Project How I See You',
     description: "Une application mobile basé sur le challenge #HowISeeYou. Représenter une personne avec neuf photo.",
     languages: ["React Native"],
     others: ["Android"],
     github: '',
     site: '',
-  },]
+  },{
+    title: "Papote Car",
+    link: "/papote-car",
+    img: imgPapoteCar,
+    description: "Application web",
+    languages: ["VueJS"],
+    others: ["Site web"],
+    github: '',
+    site: '',
+  }]
 
   return (
     <>
@@ -40,7 +49,9 @@ function Creations() {
       </Hero>
       <Container size="max-w-2xl">
         {
-          projects.map((project, i) => <CardCreations key={i} {...project} />)
+          projects.map((project, i) => <CardCreations 
+          imgLeft={ Boolean(i%2) } 
+          key={i} {...project} />)
         }
       </Container>
     </>
