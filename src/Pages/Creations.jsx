@@ -12,6 +12,7 @@ import {
 // Images
 import imgHisy from "@img/hisy/screenshot_1.jpg";
 import imgPapoteCar from "@img/papoteCar/home.jpg";
+import imgMedicalReminder from "@img/medicalReminder/mr_home.jpg";
 
 function Creations() {
   const projects = [{
@@ -27,11 +28,20 @@ function Creations() {
     title: "Papote Car",
     link: "/papote-car",
     img: imgPapoteCar,
-    description: "Application web",
+    description: "Nam eget sollicitudin metus. Nunc nec velit mi. Integer hendrerit orci sed nisi ultrices, id consectetur augue lacinia. Vestibulum in felis ac velit dictum condimentum quis et leo.",
     languages: ["VueJS"],
     others: ["Site web"],
     github: '',
     site: '',
+  },{
+      title: "Medical Reminder",
+      link: "/medical-reminder",
+      img: imgMedicalReminder,
+      description: "Proin ac felis sed metus finibus hendrerit. Suspendisse potenti. Curabitur gravida lobortis consectetur. Donec fermentum blandit ipsum, sed ultrices ex molestie a. Mauris viverra in turpis sit amet blandit.",
+      languages: ["VueJS"],
+      others: ["Site web"],
+      github: '',
+      site: '',
   }]
 
   return (
