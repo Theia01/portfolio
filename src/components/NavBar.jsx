@@ -12,10 +12,10 @@ function NavBar() {
       link: "/creations",
       title: "Créations Web & Mobile",
     },
-    {
-      link: "/parcours",
-      title: "Mon parcours",
-    },
+    // {
+    //   link: "/parcours",
+    //   title: "Mon parcours",
+    // },
     {
       link: "/",
       title: "Contact",
