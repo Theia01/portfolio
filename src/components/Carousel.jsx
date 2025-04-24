@@ -7,7 +7,7 @@ function Carousel({ imgs }) {
     </div>
   ));
   const linksImg = imgs.map((img, i) => (
-    <a href={`#${hash}-${i}`} className="btn btn-xs">
+    <a key={i} href={`#${hash}-${i}`} className="btn btn-xs">
       {i + 1}
     </a>
   ));
