@@ -8,24 +8,24 @@ import Hero from "@components/Hero.jsx";
 import { IconGithub, IconLinkedin, IconMail } from "@components/Icons.jsx";
 
 function Home() {
-  const services = [{
-    title: "Visuel Graphique",
-    text: "Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem officia.",
-  },
-  {
-    title: "Site vitrine, e-commerce",
-    text: "Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem.",
-  },
-  {
-    title: "Application Mobile",
-    text: "Aliquid saepe repudiandae qui placeat atque atione voluptatem qui repellat quis.",
-  },
-  {
-    title: "Optimisation SEO",
-    text: "Olorem blanditiis omnis. Qui deleniti dignissimos doloremque incidunt dicta suscipit aspernatur tenetur.",
-  },
-
-]
+  const services = [
+    {
+      title: "Visuel Graphique",
+      text: "Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem officia.",
+    },
+    {
+      title: "Site vitrine, e-commerce",
+      text: "Optio velit ratione voluptatem qui repellat quis. Suscipit voluptatem.",
+    },
+    {
+      title: "Application Mobile",
+      text: "Aliquid saepe repudiandae qui placeat atque atione voluptatem qui repellat quis.",
+    },
+    {
+      title: "Optimisation SEO",
+      text: "Olorem blanditiis omnis. Qui deleniti dignissimos doloremque incidunt dicta suscipit aspernatur tenetur.",
+    },
+  ];
 
   return (
     <>
@@ -42,11 +42,17 @@ function Home() {
             <Link className="btn btn-ghost" to="https://github.com/theia01">
               <IconGithub />
             </Link>
-            <Link className="btn btn-ghost" to="https://www.linkedin.com/in/axelle-guinaudeau-2b4036172/">
-            <IconLinkedin />
+            <Link
+              className="btn btn-ghost"
+              to="https://www.linkedin.com/in/axelle-guinaudeau-2b4036172/"
+            >
+              <IconLinkedin />
             </Link>
-            <a className="btn btn-ghost" href='mailto:axelle.guinaudeau.pro@gmail.com'>
-            <IconMail />
+            <a
+              className="btn btn-ghost"
+              href="mailto:axelle.guinaudeau.pro@gmail.com"
+            >
+              <IconMail />
             </a>
           </div>
           <NavLink
@@ -68,7 +74,9 @@ function Home() {
           voluptatibus molestiae delectus voluptatibus.
         </p>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 pt-5">
-          { services.map((service, i) => <CardHome key={i} {...service} />)  }
+          {services.map((service, i) => (
+            <CardHome key={i} {...service} />
+          ))}
         </div>
       </Container>
     </>

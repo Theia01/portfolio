@@ -20,7 +20,10 @@ function App() {
           <Route path="/creations" element={<Creations />} />
           <Route path="/creations/hisy" element={<Hisy />} />
           <Route path="/creations/papote-car" element={<PapoteCar />} />
-          <Route path="/creations/medical-reminder" element={<MedicalReminder />} />
+          <Route
+            path="/creations/medical-reminder"
+            element={<MedicalReminder />}
+          />
           <Route path="/parcours" element={<Parcours />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
