@@ -15,6 +15,9 @@ function CardCreations({
   site = "",
 }) {
   const imgReverse = imgLeft ? "sm:flex-row-reverse" : "sm:flex-row";
+  const imgRoundCornerDirection = imgLeft
+    ? "sm:rounded-l-lg"
+    : "sm:rounded-r-lg";
 
   return (
     <div
@@ -56,7 +59,9 @@ function CardCreations({
           </NavLink>
         </div>
       </div>
-      <figure className="sm:max-w-50 sm:max-h-70 max-h-60 rounded-t-lg rounded-b-none sm:rounded-t-none sm:rounded-r-lg ">
+      <figure
+        className={`sm:max-w-50 sm:max-h-70 max-h-60 rounded-t-lg rounded-b-none sm:rounded-t-none ${imgRoundCornerDirection}`}
+      >
         <img src={img} alt={`Projet ${title}`} />
       </figure>
     </div>
