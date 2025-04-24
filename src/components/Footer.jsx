@@ -1,6 +1,7 @@
+
 function Footer() {
   return (
-    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 grid place-items-center grid-cols-3">
       <nav>
         <h6 className="footer-title">Créations</h6>
         <a className="link link-hover">Site web</a>

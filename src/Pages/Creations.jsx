@@ -11,19 +11,38 @@ import {
 
 // Images
 import imgHisy from "@img/hisy/screenshot_1.jpg";
+import imgPapoteCar from "@img/papoteCar/home.jpg";
+import imgMedicalReminder from "@img/medicalReminder/mr_home.jpg";
 
 function Creations() {
   const projects = [{
     title: "hisy",
     link: "/hisy",
     img: imgHisy,
-    imgAlt: 'Project How I See You',
     description: "Une application mobile basé sur le challenge #HowISeeYou. Représenter une personne avec neuf photo.",
     languages: ["React Native"],
     others: ["Android"],
     github: '',
     site: '',
-  },]
+  },{
+    title: "Papote Car",
+    link: "/papote-car",
+    img: imgPapoteCar,
+    description: "Nam eget sollicitudin metus. Nunc nec velit mi. Integer hendrerit orci sed nisi ultrices, id consectetur augue lacinia. Vestibulum in felis ac velit dictum condimentum quis et leo.",
+    languages: ["VueJS"],
+    others: ["Site web"],
+    github: '',
+    site: '',
+  },{
+      title: "Medical Reminder",
+      link: "/medical-reminder",
+      img: imgMedicalReminder,
+      description: "Proin ac felis sed metus finibus hendrerit. Suspendisse potenti. Curabitur gravida lobortis consectetur. Donec fermentum blandit ipsum, sed ultrices ex molestie a. Mauris viverra in turpis sit amet blandit.",
+      languages: ["VueJS"],
+      others: ["Site web"],
+      github: '',
+      site: '',
+  }]
 
   return (
     <>
@@ -40,7 +59,9 @@ function Creations() {
       </Hero>
       <Container size="max-w-2xl">
         {
-          projects.map((project, i) => <CardCreations key={i} {...project} />)
+          projects.map((project, i) => <CardCreations 
+          imgLeft={ Boolean(i%2) } 
+          key={i} {...project} />)
         }
       </Container>
     </>
