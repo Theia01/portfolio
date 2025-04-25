@@ -1,5 +1,6 @@
 // Components
 import Container from "@components/Container";
+import ContainerSection from "../components/ContainerSection";
 import Carousel from "@components/Carousel";
 import { IconInfo, IconArrowRight, IconArrowLeft } from "@components/Icons.jsx";
 
@@ -81,9 +82,10 @@ function Hisy() {
           </div>
         </div>
       </div>
-      <div className="pb-10">
-        <h2 className="text-xl font-bold mb-2">Description</h2>
-        <p>#howiseeyou #howiseemyself #howweseeeachother</p>
+      <ContainerSection
+        title="Description"
+        subtitle="#howiseeyou #howiseemyself #howweseeeachother"
+      >
         <p>
           Hisy est une application inspirée de la tendance virale #HowISeeYou,
           qui signifie littéralement "Comment je te vois". Elle permet de
@@ -92,6 +94,7 @@ function Hisy() {
           vous voyez vos amis — ou vous-même — de manière créative et
           authentique.
         </p>
+        <br />
         <p>
           Ce concept simple mais puissant génère un contenu hautement engageant,
           personnel et partageable, favorisant une forte viralité sur les
@@ -99,14 +102,14 @@ function Hisy() {
           #HowISeeMyself, renforçant l'aspect introspectif et interactif de
           l’expérience.
         </p>
+        <br />
         <p>
           Les catégories sont prédéfinies pour guider la création, mais
           l'approche reste ouverte pour permettre des déclinaisons créatives,
           notamment par la communauté.
         </p>
-      </div>
-      <div className="pb-10">
-        <h2 className="text-xl font-bold mb-2">Fonctionnement</h2>
+      </ContainerSection>
+      <ContainerSection title="Fonctionnement">
         <div className="md:grid md:grid-cols-3 md:grid-rows-3 md:gap-4">
           <div className="md:col-span-2 row-span-1 pb-6">
             <p>
@@ -140,7 +143,7 @@ function Hisy() {
             {paraphEndFunctioning}
           </div>
         </div>
-      </div>
+      </ContainerSection>
     </Container>
   );
 }

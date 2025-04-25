@@ -2,6 +2,7 @@
 import { NavLink, Link } from "react-router";
 import CardHome from "@components/CardHome.jsx";
 import Container from "@components/Container.jsx";
+import ContainerSection from "../components/ContainerSection";
 import Hero from "@components/Hero.jsx";
 
 // Icons
@@ -64,20 +65,19 @@ function Home() {
         </Hero>
       </header>
       <Container>
-        <h2 className="text-xl font-bold mb-2">
-          Les services que je vous propose en travaillant ensemble 🤝
-        </h2>
-        <p>
-          Eius et voluptatem qui voluptatem. Perspiciatis numquam possimus eos
-          recusandae. Iste asperiores ut aperiam molestias omnis omnis. Placeat
-          ut sequi doloribus delectus. Consectetur dolor omnis minima voluptas
-          voluptatibus molestiae delectus voluptatibus.
-        </p>
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 pt-5">
-          {services.map((service, i) => (
-            <CardHome key={i} {...service} />
-          ))}
-        </div>
+        <ContainerSection title="Les services que je vous propose en travaillant ensemble 🤝">
+          <p>
+            Eius et voluptatem qui voluptatem. Perspiciatis numquam possimus eos
+            recusandae. Iste asperiores ut aperiam molestias omnis omnis.
+            Placeat ut sequi doloribus delectus. Consectetur dolor omnis minima
+            voluptas voluptatibus molestiae delectus voluptatibus.
+          </p>
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 pt-5">
+            {services.map((service, i) => (
+              <CardHome key={i} {...service} />
+            ))}
+          </div>
+        </ContainerSection>
       </Container>
     </>
   );
