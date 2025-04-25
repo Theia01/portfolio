@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 // Component
 import { NavLink, Link } from "react-router";
 import CardHome from "@components/CardHome.jsx";
@@ -27,6 +29,13 @@ function Home() {
       text: "Olorem blanditiis omnis. Qui deleniti dignissimos doloremque incidunt dicta suscipit aspernatur tenetur.",
     },
   ];
+
+  // bug component Link in react rooter doesnt redirect with #
+  useEffect(() => {
+    if (/contact/.test(window.location.pathname)) {
+      document.getElementById("contact").scrollIntoView();
+    }
+  });
 
   return (
     <>
@@ -67,15 +76,47 @@ function Home() {
       <Container>
         <ContainerSection title="Les services que je vous propose en travaillant ensemble 🤝">
           <p>
-            Eius et voluptatem qui voluptatem. Perspiciatis numquam possimus eos
-            recusandae. Iste asperiores ut aperiam molestias omnis omnis.
-            Placeat ut sequi doloribus delectus. Consectetur dolor omnis minima
-            voluptas voluptatibus molestiae delectus voluptatibus.
+            De formation dévellopeuse web, avec diverses expérience en
+            entreprise, j'ai su acquérir de nombreux champs d'expertises pour
+            vous aider à concrétiser vos idées.
           </p>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 pt-5">
             {services.map((service, i) => (
               <CardHome key={i} {...service} />
             ))}
+          </div>
+        </ContainerSection>
+        <ContainerSection
+          id="contact"
+          title="Un projet en tête ? Je serai ravie de vous accompagner ✨"
+        >
+          <p id="contact">
+            Dites-moi tout sur votre idée de rêve en me laissant un message sur
+            LinkedIn:
+          </p>
+          <div className="flex items-center pt-2 pb-4">
+            <Link
+              className="btn btn-ghost"
+              to="https://www.linkedin.com/in/axelle-guinaudeau-2b4036172/"
+              viewTransition
+            >
+              <IconLinkedin />{" "}
+            </Link>
+            <p className="font-normal text-sm">
+              https://www.linkedin.com/in/axelle-guinaudeau-2b4036172/
+            </p>
+          </div>
+          <p>Ou bien par mail:</p>
+          <div className="flex items-center pt-2">
+            <a
+              className="btn btn-ghost"
+              href="mailto:axelle.guinaudeau.pro@gmail.com"
+            >
+              <IconMail />
+            </a>
+            <p className="font-normal text-sm">
+              axelle.guinaudeau.pro@gmail.com
+            </p>
           </div>
         </ContainerSection>
       </Container>

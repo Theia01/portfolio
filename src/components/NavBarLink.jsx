@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { Link } from "react-router";
 
 function NavBarLink({ link, title, isMenuHamburger = false }) {
   return (
@@ -18,7 +18,7 @@ function NavBarLink({ link, title, isMenuHamburger = false }) {
             : null
         }
       >
-        <NavLink to={link}>{title}</NavLink>
+        <Link to={link}>{title}</Link>
       </li>
     </>
   );

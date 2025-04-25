@@ -12,12 +12,13 @@ function NavBar() {
       link: "/creations",
       title: "Créations Web & Mobile",
     },
+    // portfolio not a cv.
     // {
     //   link: "/parcours",
     //   title: "Mon parcours",
     // },
     {
-      link: "/",
+      link: "/contact",
       title: "Contact",
     },
   ];
@@ -25,12 +26,7 @@ function NavBar() {
   // Création de la navBarLinks en fonction si c'est pour le menu web ou mobile
   function createNavBarLinks(isMenuHamburger = false) {
     return links.map((item, i) => (
-      <NavBarLink
-        key={i}
-        link={item.link}
-        title={item.title}
-        isMenuHamburger={isMenuHamburger}
-      />
+      <NavBarLink key={i} {...item} isMenuHamburger={isMenuHamburger} />
     ));
   }
 
