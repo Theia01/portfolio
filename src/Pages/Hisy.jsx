@@ -25,17 +25,16 @@ function Hisy() {
 
   let paraphEndFunctioning = (
     <p>
-      In sed vehicula nisi. Donec lorem purus, laoreet sed dictum vitae, tempor
-      sed ligula. Duis orci velit, vulputate eu viverra vel, placerat sit amet
-      magna. Nunc non placerat dui, quis dignissim magna. Cras sollicitudin,
-      lectus et ultricies euismod, ante arcu tincidunt ligula, non ultricies
-      orci massa et elit.
+      Au fur et à mesure de la construction de votre image, des petites
+      notifications apparaîtront pour encourager l'utilisateur à terminer son
+      image. A la fin de celle-ci, une explosion de confetti apparaîtra sur
+      l'écran. De plus les bouton "Télécharger" et "Partager" se débloqueront.
       <br />
       <br />
-      Vestibulum quam purus, maximus at lacinia eget, porttitor at ex. Donec
-      condimentum pellentesque nunc, nec facilisis arcu.Vestibulum mauris dui,
-      lobortis varius orci eget, vulputate porttitor neque. Integer efficitur
-      metus mi, sit amet fringilla nulla vehicula quis.
+      Le partage est l'élément le plus important puisque l'utilisateur à créer
+      cette image pour montrer sa perception à quelqu'un. Des options
+      supplémentaire lui seront fourni tel que l'ajout de bordure ou non sur
+      l'image.
     </p>
   );
 
@@ -45,22 +44,27 @@ function Hisy() {
       <div className="sm:grid sm:grid-cols-2 sm:gap-4 pb-20">
         <div>
           <p className="pb-4">
-            Pellentesque mattis mauris sed lacinia tincidunt. Morbi sit amet
-            finibus urna. Suspendisse interdum id sem vel interdum. Sed et
-            sodales enim, sed interdum massa. Donec malesuada massa urna
+            Avez-vous déjà voulu montrer à vos amis comment vous les percevez à
+            travers différentes facettes de leur personnalité ?
+            <br />
+            Avec Hisy, cette expérience unique est à portée de main. Notre
+            application vous permet de créer et partager une vision complète de
+            vos amis à travers une série de neuf catégories soigneusement
+            sélectionnées.
           </p>
-          <div className="max-sm:hidden max-w-3xs ml-auto lg:relative lg:-top-6">
+          <div className="max-sm:hidden max-w-3xs ml-auto">
             <IconArrowRight />
           </div>
         </div>
-        <div>
+        <div className="flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semi-bold pb-4">
               Découvrez par vous même !
             </h2>
             <p className="pb-2">
-              Etiam in nibh at tortor consequat efficitur vel quis diam. Quisque
-              rhoncus odio aliquet euismod porttitor.
+              Hisy offre une expérience unique pour célébrer l'unicité de chacun
+              de vos amis. Téléchargez l'application dès aujourd'hui et plongez
+              dans l'aventure "Hisy" !
             </p>
           </div>
           <div>
@@ -68,7 +72,7 @@ function Hisy() {
               <IconInfo />
               <span>
                 Il sera peut être nécessaire d'autoriser l'installation
-                d'application inconnu sur votre téléphone.
+                d'application de source inconnu sur votre téléphone.
               </span>
             </div>
             <a className="btn btn-primary" href="/portfolio/hisy.apk" download>
@@ -79,14 +83,26 @@ function Hisy() {
       </div>
       <div className="pb-10">
         <h2 className="text-xl font-bold mb-2">Description</h2>
+        <p>#howiseeyou #howiseemyself #howweseeeachother</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus
-          mi ut pretium dapibus. Aenean sit amet iaculis dui, in tincidunt diam.
-          Etiam in nibh at tortor consequat efficitur vel quis diam. Quisque
-          rhoncus odio aliquet euismod porttitor. Nunc molestie interdum
-          sodales. Mauris finibus nisl ac mi ultricies, ut ultrices elit varius.
-          Vestibulum congue nec odio a molestie. Nam imperdiet in arcu et
-          semper. In ac accumsan tortor.
+          Hisy est une application inspirée de la tendance virale #HowISeeYou,
+          qui signifie littéralement "Comment je te vois". Elle permet de
+          partager notre perception d'une personne à travers neuf catégories
+          visuelles soigneusement choisies. En quelques images, exprimez comment
+          vous voyez vos amis — ou vous-même — de manière créative et
+          authentique.
+        </p>
+        <p>
+          Ce concept simple mais puissant génère un contenu hautement engageant,
+          personnel et partageable, favorisant une forte viralité sur les
+          réseaux sociaux. L'utilisateur peut également se décrire lui-même via
+          #HowISeeMyself, renforçant l'aspect introspectif et interactif de
+          l’expérience.
+        </p>
+        <p>
+          Les catégories sont prédéfinies pour guider la création, mais
+          l'approche reste ouverte pour permettre des déclinaisons créatives,
+          notamment par la communauté.
         </p>
       </div>
       <div className="pb-10">
@@ -94,18 +110,18 @@ function Hisy() {
         <div className="md:grid md:grid-cols-3 md:grid-rows-3 md:gap-4">
           <div className="md:col-span-2 row-span-1 pb-6">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              luctus mi ut pretium dapibus. Aenean sit amet iaculis dui, in
-              tincidunt diam. Etiam in nibh at tortor consequat efficitur vel
-              quis diam. Quisque rhoncus odio aliquet euismod porttitor. Nunc
-              molestie interdum sodales. Mauris finibus nisl ac mi ultricies, ut
-              ultrices elit varius. Vestibulum congue nec odio a molestie. Nam
-              imperdiet in arcu et semper. In ac accumsan tortor.
+              En plongeant dans l'application, vous serez guidé par une slide
+              d'introduction rappelant les principes clés d’Hisy. Vous pouvez
+              aussi sélectionner votre langue préférée dès le départ grâce au
+              bouton en haut à droite.
             </p>
             <p>
               <br />
-              Donec eget erat ut lectus volutpat gravida. Vestibulum interdum
-              eleifend risus non viverra.
+              Une fois à l’intérieur, plusieurs sections sont là pour vous
+              accompagner dans la création de votre image. L’outil central est
+              un cadre interactif situé au milieu de l’écran, où vous pouvez
+              ajouter vos images et les redimensionner facilement selon vos
+              envies.
             </p>
           </div>
           <div className="md:col-span-1 md:row-span-2">
