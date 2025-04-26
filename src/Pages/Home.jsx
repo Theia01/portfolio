@@ -86,15 +86,11 @@ function Home() {
             ))}
           </div>
         </ContainerSection>
-        <ContainerSection
-          id="contact"
-          title="Un projet en tête ? Je serai ravie de vous accompagner ✨"
-        >
+        <ContainerSection id="contact" title="Contactez-moi ✨">
           <p id="contact">
-            Dites-moi tout sur votre idée de rêve en me laissant un message sur
-            LinkedIn:
+            Un projet en tête ? Je serai ravie de vous accompagner !
           </p>
-          <div className="flex items-center pt-2 pb-4">
+          <div className="flex items-center pt-2">
             <Link
               className="btn btn-ghost"
               to="https://www.linkedin.com/in/axelle-guinaudeau-2b4036172/"
@@ -106,7 +102,6 @@ function Home() {
               https://www.linkedin.com/in/axelle-guinaudeau-2b4036172/
             </p>
           </div>
-          <p>Ou bien par mail:</p>
           <div className="flex items-center pt-2">
             <a
               className="btn btn-ghost"
